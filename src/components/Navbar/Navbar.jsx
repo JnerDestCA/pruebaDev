@@ -1,9 +1,7 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-
 function Navbar() {
     return (
         <>
-            <section class="ml-65 flex flex-row">
+            <section class="ml-75 flex flex-row">
                 <div class="flex flex-row w-full shadow p-4 gap-5 justify-between items-center">
                     <div>
                         <div>
