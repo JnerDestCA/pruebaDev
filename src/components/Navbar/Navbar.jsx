@@ -1,12 +1,12 @@
 function Navbar() {
     return (
         <>
-            <section class="ml-75 flex flex-row">
-                <div class="flex flex-row w-full shadow p-4 gap-5 justify-between items-center">
+            <section class="flex flex-row w-full justify-between">
+                <div class="flex flex-row shadow p-4 gap-5 justify-between items-center w-full h-20">
                     <div>
                         <div>
-                            <p>!Te damos la bienvenida Miguel!</p>
-                            <p>Lunes, 15 de abril 2024</p>
+                            <p class="text-gray-600">!Te damos la bienvenida Miguel!</p>
+                            <p class="text-gray-500">Lunes, 15 de abril 2024</p>
                         </div>
                     </div>
 
@@ -20,18 +20,16 @@ function Navbar() {
                             <a href="">Not</a>
                             <a href="">Cfs</a>
                         </div>
-                    </div>
-
-                    
+                    </div>    
                 </div>
                 <div>
-                    <div class="flex flex-row shadow p-4">
+                    <div class="flex flex-row shadow p-4 gap-5 items-center w-60 h-20 bg-gray-50">
                         <div>
                             <a href="">Ico</a>
                         </div>
                         <div>
-                            <p>Miguel Liberato</p>
-                            <p>CEO LVL Consulting</p>
+                            <p class="text-gray-600">Miguel Liberato</p>
+                            <p class="text-gray-500">CEO LVL Consulting</p>
                         </div>
                     </div>
                 </div>
