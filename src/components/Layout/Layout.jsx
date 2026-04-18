@@ -6,7 +6,7 @@ function Layout() {
   return (
     <>
       <div class="w-full h-screen">
-        <div class="flex">
+        <div class="flex h-full">
           <Sidebar />
           <div class="flex-1">
             <Navbar />

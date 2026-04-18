@@ -1,8 +1,12 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope,faBorderAll,faGear,faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { faBell } from '@fortawesome/free-regular-svg-icons'
+import esp from '../../assets/esp.png'
 function Navbar() {
     return (
         <>
             <section class="flex flex-row w-full justify-between">
-                <div class="flex flex-row shadow p-4 gap-5 justify-between items-center w-full h-20">
+                <div class="flex flex-row shadow p-6 gap-5 justify-between items-center w-full h-20">
                     <div>
                         <div>
                             <p class="text-gray-600">!Te damos la bienvenida Miguel!</p>
@@ -11,14 +15,15 @@ function Navbar() {
                     </div>
 
                     <div class="flex gap-5">
-                        <div class="flex gap-3">
-                            <a href="">banderas</a>
+                        <div class="flex gap-3 items-center">
+                            <img src={esp} alt="BanderaEsp" class="w-5 h-5"/>
                             <span>Español</span>
+                            <FontAwesomeIcon icon={faAngleDown} />
                         </div>
                         <div class="flex gap-3">
-                            <a href="">Ds</a>
-                            <a href="">Not</a>
-                            <a href="">Cfs</a>
+                            <FontAwesomeIcon icon={faBorderAll} />
+                            <FontAwesomeIcon icon={faBell} />
+                            <FontAwesomeIcon icon={faGear} />
                         </div>
                     </div>    
                 </div>
