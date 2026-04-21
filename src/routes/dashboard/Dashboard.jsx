@@ -1,3 +1,5 @@
+import PieChart from "../../components/ReCharts/PieChart.jsx"
+import SimpleAreaChart from "../../components/ReCharts/SimpleAreaChart.jsx"
 function Dashboard() {
     return (
         <>
@@ -52,10 +54,12 @@ function Dashboard() {
 
                 <div>
                     <span class="text-blue-900 font-bold">Historial de Ventas</span>
+                    <SimpleAreaChart />
                 </div>
                 <div class="flex">
                     <div>
                         <span class="text-blue-900 font-bold">Historial de Ventas</span>
+                        <PieChart />
                     </div>
                     <div>
                         <span class="text-blue-900 font-bold">Historial de Ventas</span>
