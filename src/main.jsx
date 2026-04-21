@@ -5,8 +5,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Login from './routes/login/Login.jsx'
 import Dashboard from './routes/dashboard/Dashboard.jsx'
 import PaginasWeb from './routes/paginasWeb/PaginasWeb.jsx'
+import FormPaginasWeb from './routes/paginasWeb/FormPaginasWeb.jsx'
 import ProtectedRoute from './routes/protectedRoute/ProtectedRoute.jsx'
 import Layout from './components/Layout/Layout.jsx'
+
 
 const router = createBrowserRouter([
   {
@@ -23,7 +25,11 @@ const router = createBrowserRouter([
       {
         path: "/PaginasWeb",
         element: <PaginasWeb />
-      }
+      },
+      {
+        path: "/FormPaginasWeb",
+        element: <FormPaginasWeb />
+      },
     ]
   },
 ]);

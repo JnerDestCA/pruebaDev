@@ -10,7 +10,7 @@ function Layout() {
           <Sidebar />
           <div class="flex-1">
             <Navbar />
-            <div class="">
+            <div>
               <Outlet />
             </div>
           </div>

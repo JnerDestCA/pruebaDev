@@ -8,7 +8,7 @@ function Sidebar() {
 
     return (
         <>
-            <section class={`flex flex-col p-6 bg-gray-50 ${Open ? 'w-80' : 'w-20 transition'}`}>
+            <section class={`flex flex-col p-6 bg-gray-50 ${Open ? 'w-80 transition-all duration-300' : 'w-20 transition-all duration-300'}`}>
                 <div class="flex justify-between p-3">
                     <a href="" class={Open ? '' : 'hidden'}>Logo empresa</a>
                     <button onClick={()=>setOpen(!Open)} class="cursor-pointer">

@@ -62,15 +62,13 @@ function SimpleAreaChart() {
             - Aplicamos el color verde esmeralda (#10b981)
           */}
                 <Area
-                    type="monotone"
+                    type="linear"
                     dataKey="tlibre"
                     stroke="#10b981"
-                    strokeWidth={3}
+                    strokeWidth={2}
                     fillOpacity={1}
                     fill="url(#colorGreen)"
                 />
-
-                {/* <RechartsDevtools /> */}
             </AreaChart>
         </div>
 

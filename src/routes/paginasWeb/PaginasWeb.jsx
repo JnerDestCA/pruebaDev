@@ -1,11 +1,19 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope,faPencil,faEye,faTrashCan    } from '@fortawesome/free-solid-svg-icons'
+import { useNavigate } from 'react-router-dom'
 function PaginasWeb() {
+    
+    const navigate=useNavigate()
+
     return (
         <>
             <section class="p-6">
                 <div>
-                    <span class="text-blue-900 font-bold">Paginas Webs</span>
+                    <div class="flex justify-between items-center">
+                        <span class="text-blue-900 font-bold">Paginas Webs</span>
+                        <button class="mr-2 p-1.5 bg-blue-900 text-white font-medium rounded-xl cursor-pointer" onClick={()=> navigate('/FormPaginasWeb')}>Agregar Web</button>
+                    </div>
+                    
                     <div class="shadow w-full flex justify-center mt-4 overflow-auto rounded-lg">
                         <table class="w-full border border-gray-200">
                             <thead>

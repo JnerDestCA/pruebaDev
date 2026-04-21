@@ -1,8 +1,10 @@
 import google from '/src/assets/buscar.png'
 import facebook from '/src/assets/facebook.png'
 import adobe from '/src/assets/adobe.png'
-function Login() {
+import { useNavigate } from 'react-router-dom';
 
+function Login() {
+    const navigate = useNavigate();
     return (
         <>
             <section>
@@ -31,7 +33,7 @@ function Login() {
                                 <div >
                                     <span>Al registrarte aceptas los <u class="text-blue-900 cursor-pointer">Terminos de uso de LVL Consulting</u></span>
                                 </div>
-                                <button type="submit" class="w-full bg-blue-900 text-white p-2 border rounded-md">Agregar Categoria</button>
+                                <button type="submit" class="w-full bg-blue-900 text-white p-2 border rounded-md" onClick={()=> navigate('/Dashboard')}>Agregar Categoria</button>
 
                                 <div class="flex items-center justify-center py-3">
                                     <div class="w-full border-t border-black"></div>
